@@ -12,7 +12,7 @@ npm install react-native-awesome-metric-africa-library
 
 
 ```js
-import { multiply } from 'react-native-awesome-metric-africa-library';
+import { initMetricAfricaSdk, initializeVerification} from 'react-native-awesome-metric-africa-library';
 
 // ...
 
