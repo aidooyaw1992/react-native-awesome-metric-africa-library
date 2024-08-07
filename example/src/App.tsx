@@ -1,14 +1,16 @@
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-awesome-metric-africa-library';
+import { useEffect } from 'react';
+import { StyleSheet, View } from 'react-native';
 
-const result = multiply(3, 7);
+import { initMetricSdk } from 'react-native-awesome-metric-africa-library';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
-  );
+  useEffect(() => {
+    initMetricSdk('CLIENT_ID', 'CLIENT_SECRET', true).then(() => {
+      console.log('Awesome Metric Africa SDK initialized');
+    });
+  }, []);
+
+  return <View style={styles.container} />;
 }
 
 const styles = StyleSheet.create({

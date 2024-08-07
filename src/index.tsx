@@ -1,6 +1,18 @@
 const AwesomeMetricAfricaLibrary =
   require('./NativeAwesomeMetricAfricaLibrary').default;
 
-export function multiply(a: number, b: number): number {
-  return AwesomeMetricAfricaLibrary.multiply(a, b);
+export function initMetricSdk(
+  clientId: string,
+  clientSecret: string,
+  isDev: boolean
+) {
+  return AwesomeMetricAfricaLibrary.initMetricAfricaSdk(
+    clientId,
+    clientSecret,
+    isDev
+  );
+}
+
+export function initVerification(token: string) {
+  return AwesomeMetricAfricaLibrary.initializeVerification(token);
 }
