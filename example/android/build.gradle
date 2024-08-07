@@ -39,5 +39,13 @@ allprojects {
         }
         mavenCentral()
         google()
+        maven {
+            url  "http://android.metric.africa:8081/artifactory/metric-sdk-sdk"
+            allowInsecureProtocol true
+            credentials {
+                username = "sdk1bridge"
+                password = "Axz441234!88!"
+            }
+        }
     }
 }
