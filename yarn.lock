@@ -10941,7 +10941,7 @@ __metadata:
     react-native-builder-bob: ^0.29.0
     release-it: ^15.0.0
     turbo: ^1.10.7
-    typescript: ^5.2.2
+    typescript: ^5.2.0
   peerDependencies:
     react: "*"
     react-native: "*"
@@ -12871,7 +12871,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.6.4 || ^5.2.2, typescript@npm:^5.2.2":
+"typescript@npm:^4.6.4 || ^5.2.2, typescript@npm:^5.2.0":
   version: 5.5.4
   resolution: "typescript@npm:5.5.4"
   bin:
@@ -12881,7 +12881,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.6.4 || ^5.2.2#~builtin<compat/typescript>, typescript@patch:typescript@^5.2.2#~builtin<compat/typescript>":
+"typescript@patch:typescript@^4.6.4 || ^5.2.2#~builtin<compat/typescript>, typescript@patch:typescript@^5.2.0#~builtin<compat/typescript>":
   version: 5.5.4
   resolution: "typescript@patch:typescript@npm%3A5.5.4#~builtin<compat/typescript>::version=5.5.4&hash=29ae49"
   bin:
