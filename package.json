@@ -1,6 +1,6 @@
 {
   "name": "react-native-awesome-metric-africa-library",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "turbo module for metric africa",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
