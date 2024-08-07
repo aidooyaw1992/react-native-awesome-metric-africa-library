@@ -173,7 +173,6 @@
       [
         "typescript",
         {
-          "project": "tsconfig.build.json",
           "esm": true
         }
       ]
@@ -188,5 +187,6 @@
     "type": "module-new",
     "languages": "kotlin-objc",
     "version": "0.40.0"
-  }
+  },
+  "types": "./lib/typescript/commonjs/src/index.d.ts"
 }
