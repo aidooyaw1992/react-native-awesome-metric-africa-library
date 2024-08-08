@@ -1,18 +1,18 @@
 const AwesomeMetricAfricaLibrary =
   require('./NativeAwesomeMetricAfricaLibrary').default;
 
-export function initMetricSdk(
+export async function initMetricSdk(
   clientId: string,
   clientSecret: string,
   isDev: boolean
 ) {
-  return AwesomeMetricAfricaLibrary.initMetricAfricaSdk(
+  return await AwesomeMetricAfricaLibrary.initMetricAfricaSdk(
     clientId,
     clientSecret,
     isDev
   );
 }
 
-export function initVerification(token: string) {
-  return AwesomeMetricAfricaLibrary.initializeVerification(token);
+export async function initVerification(token: string) {
+  return await AwesomeMetricAfricaLibrary.initializeVerification(token);
 }

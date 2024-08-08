@@ -1,12 +1,18 @@
 import { useEffect } from 'react';
 import { StyleSheet, View } from 'react-native';
-
-import { initMetricSdk } from 'react-native-awesome-metric-africa-library';
+import {
+  initMetricSdk,
+  initVerification,
+} from 'react-native-awesome-metric-africa-library';
 
 export default function App() {
+  const CLIENT_KEY = '';
+  const CLIENT_SECRET = '';
   useEffect(() => {
-    initMetricSdk('CLIENT_ID', 'CLIENT_SECRET', true).then(() => {
-      console.log('Awesome Metric Africa SDK initialized');
+    initMetricSdk(CLIENT_KEY, CLIENT_SECRET, false).then(() => {
+      initVerification('')
+        .then(() => {})
+        .catch((e: any) => console.log(e));
     });
   }, []);
 
