@@ -81,7 +81,7 @@
     "react-native-builder-bob": "^0.29.0",
     "release-it": "^15.0.0",
     "turbo": "^1.10.7",
-    "typescript": "^5.2.0"
+    "typescript": "^5.2.2"
   },
   "resolutions": {
     "@types/react": "^18.2.44"
@@ -93,7 +93,7 @@
   "workspaces": [
     "example"
   ],
-  "packageManager": "yarn@4.4.0",
+  "packageManager": "yarn@3.6.1",
   "jest": {
     "preset": "react-native",
     "modulePathIgnorePatterns": [
